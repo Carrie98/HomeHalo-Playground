@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AcmeCloud — Modern SaaS for teams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="saas.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero">AcmeCloud</a>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#features">Product</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">Docs</a></li>
+            <li><a class="nav-cta btn" href="#cta">Get Started</a></li>
+          </ul>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Launch, scale, and operate your SaaS — without the busywork</h1>
+        <p class="lead">Billing, user management, analytics, and feature flags all in one platform. Ship faster and focus on what matters.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#cta">Try free</a>
+          <a class="btn ghost" href="#features">See how it works</a>
+        </div>
+      </div>
+    </main>
+
+    <section class="section logos" aria-label="Trusted by logos">
+      <div class="container">
+        <div class="section-header small-center">
+          <div class="eyebrow">Trusted by modern teams</div>
+        </div>
+        <div class="logo-grid">
+          <div class="logo">Nova</div>
+          <div class="logo">Lumina</div>
+          <div class="logo">Vertex</div>
+          <div class="logo">Pulse</div>
+          <div class="logo">Orbit</div>
+          <div class="logo">Nimbus</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything you need to grow</h2>
+          <p class="muted">Production-grade building blocks that integrate in minutes.</p>
+        </div>
+        <div class="grid three">
+          <article class="card feature">
+            <h3>Subscriptions & Billing</h3>
+            <p>Stripe native subscriptions, seat-based plans, free trials, proration, coupons, and dunning out of the box.</p>
+          </article>
+          <article class="card feature">
+            <h3>Authentication</h3>
+            <p>Email/password, magic links, SSO/SAML, and organizations with role-based access control.</p>
+          </article>
+          <article class="card feature">
+            <h3>Analytics</h3>
+            <p>Usage, conversion, MRR, churn, and funnels with prebuilt product analytics and event tracking.</p>
+          </article>
+        </div>
+        <div class="grid two" style="margin-top:12px">
+          <article class="card feature">
+            <h3>Feature Flags</h3>
+            <p>Ship safely with gradual rollouts, A/B tests, and instant kill switches — all from one console.</p>
+          </article>
+          <article class="card feature">
+            <h3>Developer-first</h3>
+            <p>Type-safe SDKs, webhooks, and a clean REST API. Copy-paste starters for React, Next.js, and Remix.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Loved by builders</h2>
+          <p class="muted">From seed to scale — teams ship faster with AcmeCloud.</p>
+        </div>
+        <div class="grid three">
+          <blockquote class="card quote">
+            <p>“We replaced five tools with AcmeCloud and cut our launch time in half.”</p>
+            <footer>— Jordan, CTO at Nova</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“Billing and authentication in a day? It felt like cheating.”</p>
+            <footer>— Priya, Founder at Pulse</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“The analytics are insanely helpful — we finally see the full funnel.”</p>
+            <footer>— Alex, PM at Orbit</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Simple, transparent pricing</h2>
+          <p class="muted">Start free. Scale as you grow.</p>
+        </div>
+        <div class="grid three pricing-grid">
+          <article class="card pricing-card">
+            <h3>Starter</h3>
+            <div class="price"><span class="currency">$</span>0<span class="per">/mo</span></div>
+            <ul class="features">
+              <li>Up to 1k MAU</li>
+              <li>Auth & organizations</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a class="btn primary block" href="#cta">Get started</a>
+          </article>
+          <article class="card pricing-card highlight">
+            <div class="badge">Most popular</div>
+            <h3>Growth</h3>
+            <div class="price"><span class="currency">$</span>49<span class="per">/mo</span></div>
+            <ul class="features">
+              <li>Up to 25k MAU</li>
+              <li>Feature flags & experiments</li>
+              <li>Revenue analytics</li>
+            </ul>
+            <a class="btn primary block" href="#cta">Start 14‑day trial</a>
+          </article>
+          <article class="card pricing-card">
+            <h3>Scale</h3>
+            <div class="price">Custom</div>
+            <ul class="features">
+              <li>Unlimited MAU</li>
+              <li>SAML/SSO, SOC 2</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn ghost block" href="#cta">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <details class="faq-item">
+          <summary>Can I use my own auth provider?</summary>
+          <p>Yes. Use our auth or bring your own via OpenID Connect, with unified organizations and RBAC.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer discounts for startups?</summary>
+          <p>We offer a generous startup program — reach out to sales and we’ll get you set up.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is there an on‑prem option?</summary>
+          <p>Yes, we provide a managed cloud and a self-hosted enterprise deployment.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="cta" class="section cta">
+      <div class="container cta-inner">
+        <h2>Ready to ship faster?</h2>
+        <p class="muted">Join thousands of teams building with AcmeCloud.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#">Create account</a>
+          <a class="btn ghost" href="#pricing">View pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">AcmeCloud</div>
+        <ul class="footer-links">
+          <li><a href="#features">Product</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">Docs</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <div class="copy">© <span id="year"></span> AcmeCloud, Inc.</div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const toggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+        if (toggle && navList) {
+          toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            navList.classList.toggle('open');
+          });
+        }
+        const y = document.getElementById('year');
+        if (y) y.textContent = new Date().getFullYear();
+      })();
+    </script>
+  </body>
+</html>
