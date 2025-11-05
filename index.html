@@ -1,3 +1,108 @@
-test....
-<!-- add an image -->
-<img src="images/test.png" alt="image" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HomeHalo – Peace of mind, without intrusion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <a href="#" aria-label="HomeHalo home">
+          <span>HomeHalo</span>
+          <span class="dot" aria-hidden="true"></span>
+        </a>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#how">HOW IT WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="btn" type="button">LOGIN</button>
+        <button class="btn cta" type="button">JOIN NOW</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="headline">Peace of mind, without intrusion</h1>
+      <div class="hero-grid">
+        <figure>
+          <!-- Replace the src below with your exact image. If you uploaded /mnt/data/HomeHaloHeader.png, keep the same filename next to this HTML. -->
+          <img src="HomeHaloHeader.png" alt="Stylish senior with caregiver, framed by a soft halo light" />
+        </figure>
+        <div class="panel" role="complementary">
+          <h2 class="kicker">HomeHalo</h2>
+          <p class="lede">HomeHalo is a subtle home‑safety platform that helps older adults live independently while keeping families gently informed.</p>
+
+          <div class="bullet"><strong>No cameras.</strong>No constant tracking.</div>
+          <div class="bullet"><strong>Just thoughtful technology</strong>that learns daily routines and alerts loved ones only when something’s off.</div>
+
+          <form class="signup" aria-label="Join the waitlist">
+            <label for="email" class="visually-hidden">Email address</label>
+            <input id="email" class="input" name="email" type="email" placeholder="Enter your email address" required />
+            <button class="btn cta" type="submit">Get started</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature strip -->
+  <section class="strip" aria-label="Benefits">
+    <div class="container strip-inner">
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 21c4.97 0 9-3.582 9-8s-4.03-8-9-8-9 3.582-9 8c0 2.53 1.167 4.79 3.03 6.357V21l2.747-1.373C9.757 20.544 10.85 21 12 21Z" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <div class="title">Stay Connected</div>
+          <div class="desc">Enhance independence and family ties.</div>
+        </div>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11h16v7H4zM7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <div class="title">Rest Easy</div>
+          <div class="desc">Enjoy peace of mind at home.</div>
+        </div>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3 3 7v6c0 5 4 8 9 8s9-3 9-8V7l-9-4Z" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <div class="title">Less Worry</div>
+          <div class="desc">Feel secure without intrusions.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container" id="contact">
+    <div class="meta">
+      <small>© <span id="y"></span> HomeHalo</small>
+      <small><a href="#" style="color:inherit">Privacy</a> · <a href="#" style="color:inherit">Terms</a> · <a href="#" style="color:inherit">Support</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Demo only: prevent navigation in this static mock
+    document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+    document.querySelector('form.signup')?.addEventListener('submit', e=>{
+      e.preventDefault();
+      const email = (document.getElementById('email')||{}).value || '';
+      alert(`Thanks! We'll be in touch at: ${email}`);
+    });
+  </script>
+</body>
+</html>
